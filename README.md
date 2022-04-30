@@ -1,1 +1,2 @@
-## DATA VISUALIZATION REPORT
+# Data Visualization Project
+## <u>INDEX</u>
