@@ -3,7 +3,7 @@
 	
 
 ## **Requirements**
-	1. VS CODE or Any Other Python IDE
+	1. VS CODE/ PyCharm/ DataSpell/ Jupyter or any other Python Supported IDE.
 	2. Python Version 3+ Installed (Install Python Packages - NUMPY, PANDAS, MATPLOTLIB)
 	3. LINUX/ WINDOWS/ MAC OS SYSTEM
 	4. Github Knowledge
