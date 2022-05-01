@@ -107,7 +107,7 @@
 ![Visualization 1](https://github.com/Sumit21adm/Data-Visualization-Assesment/blob/28c12408ca6734e85559addb1071a06cb89f7bd6/Visualisation%20Outputs/visual1.png)
 
     Conclusion: 
-    SEASON - TOTAL MATCHES
+    *SEASON - TOTAL MATCHES
     2008 - 58   |   2009 - 57   |   2010 - 60   |   2011 - 73   |   2012 - 74
     2013 - 76   |   2014 - 60   |   2015 - 59   |   2016 - 60   |   2017 - 59
     2018 - 60   |   2019 - 60   |   2020 - 60   |   2021 - 60
@@ -127,6 +127,9 @@
     plt.show()
 ![Visualization 2](https://github.com/Sumit21adm/Data-Visualization-Assesment/blob/28c12408ca6734e85559addb1071a06cb89f7bd6/Visualisation%20Outputs/visual2.png)
 
+    Conclusion: 
+    *
+
 #### 4. Top 10 Man Of The Match Winners Of All Time IPL
     # Top 10 Man Of The Match Winners Of All Time IPL
     t5motm = all_matches['pom'].value_counts()[:10].sort_values(ascending=False)
@@ -143,6 +146,9 @@
     plt.show()
 ![Visualization 3](https://github.com/Sumit21adm/Data-Visualization-Assesment/blob/28c12408ca6734e85559addb1071a06cb89f7bd6/Visualisation%20Outputs/visual3.png)
 
+    Conclusion: 
+    *
+
 #### 5. No Of Total Matches Won By Particular IPL TEAMS 2008-21
     all_matches['Year'] = all_matches['season']
     all_matches['winner'].value_counts()[:5].sort_values()
@@ -158,6 +164,9 @@
     plt.show()
 ![Visualization 4](https://github.com/Sumit21adm/Data-Visualization-Assesment/blob/28c12408ca6734e85559addb1071a06cb89f7bd6/Visualisation%20Outputs/visual4.png)
 
+    Conclusion: 
+    *
+
 #### 6. Total IPL Runs Scored By Individual Players 2008-21
     fig, ax = plt.subplots(figsize=(16, 9))
     data = cleaned_bat.groupby(['fullName'])['runs'].sum().sort_values(ascending=False)[:10]
@@ -172,19 +181,123 @@
     plt.show()
 ![Visualization 5](https://github.com/Sumit21adm/Data-Visualization-Assesment/blob/28c12408ca6734e85559addb1071a06cb89f7bd6/Visualisation%20Outputs/visual5.png)
 
-#### 7
-    -
+    Conclusion: 
+    *
+
+#### 7 No Of Fours Hitted By Individual Players 2008-21
+    fig, ax = plt.subplots(figsize=(16, 9))
+    data = cleaned_bat.groupby(['fullName'])['fours'].sum().sort_values(ascending=False)[:10]
+    x = data
+    y = data.index
+    plt.title("No Of Fours Hitted By Individual Players 2008-21")
+    plt.bar(y, x, color=c10)
+    plt.xlabel('Batsman Name')
+    plt.ylabel('Total No Of 4 Hitted')
+    for bars in ax.containers:
+    ax.bar_label(bars)
 ![Visualization 6](https://github.com/Sumit21adm/Data-Visualization-Assesment/blob/28c12408ca6734e85559addb1071a06cb89f7bd6/Visualisation%20Outputs/visual6.png)
 
-#### 8
-    -
+    Conclusion: 
+    *
+
+#### 8 No Of Sixes Hitted By Individual Players 2008-21
+    fig, ax = plt.subplots(figsize=(16, 9))
+    data1 = cleaned_bat.groupby(['fullName'])['sixes'].sum().sort_values(ascending=False)[:10]
+    x = data1
+    y = data1.index
+    plt.title("No Of Sixes Hitted By Individual Players 2008-21")
+    plt.bar(y, x, color=cmix)
+    plt.xlabel('Batsman Name')
+    plt.ylabel('Total No Of 6 Hitted')
+    for bars in ax.containers:
+    ax.bar_label(bars)
+    plt.show()
 ![Visualization 7](https://github.com/Sumit21adm/Data-Visualization-Assesment/blob/28c12408ca6734e85559addb1071a06cb89f7bd6/Visualisation%20Outputs/visual7.png)
 
-#### 9
-    -
+    Conclusion: 
+    *
+
+#### 9 Season-Wise Orange Cap Holder Scores
+    fig, ax = plt.subplots(figsize=(16, 9))
+    data2 = cleaned_bat.groupby(['season', 'fullName'])['runs'].sum().groupby('season').max()
+    x = data2
+    y = data2.index
+    plt.title("Orange Cap Holder's Total Runs Count 2008-21")
+    plt.bar(y, x, color=c10)
+    plt.ylabel("Orange Cap Holder's Total Runs")
+    plt.xlabel('IPL Season')
+    for bars in ax.containers:
+    ax.bar_label(bars)
+    plt.show()
 ![Visualization 8](https://github.com/Sumit21adm/Data-Visualization-Assesment/blob/28c12408ca6734e85559addb1071a06cb89f7bd6/Visualisation%20Outputs/visual8.png)
 
-#### 10
-    -
+    Conclusion: 
+    *
+
+#### 10 Season-Wise Purple Cap Holder Wickets
+    fig, ax = plt.subplots(figsize=(16, 9))
+    data2 = cleaned_ball.groupby(['season', 'fullName'])['wickets'].sum().groupby('season').max()
+    x = data2
+    y = data2.index
+    plt.title("Purple Cap Holder Total Wickets Count 2008-21")
+    plt.bar(y, x, color=cmix)
+    plt.ylabel("Purple Cap Holder's Total Wickkets")
+    plt.xlabel('IPL Season')
+    for bars in ax.containers:
+    ax.bar_label(bars)
+    plt.show()
 ![Visualization 9](https://github.com/Sumit21adm/Data-Visualization-Assesment/blob/28c12408ca6734e85559addb1071a06cb89f7bd6/Visualisation%20Outputs/visual9.png)
 
+    Conclusion: 
+    *
+
+### 11 All Time Wickets Taken By Individual Players
+    fig, ax = plt.subplots(figsize=(16, 9))
+    data = cleaned_ball.groupby(['fullName'])['wickets'].sum().sort_values(ascending=False)[:5]
+    x = data
+    y = data.index
+    plt.title("Total Wickets Taken By Individual Players 2008-21")
+    plt.bar(y, x, color=c10)
+    plt.xlabel('Bowler Name')
+    plt.ylabel('Total Wickets')
+    for bars in ax.containers:
+    ax.bar_label(bars)
+    plt.show()
+![Visualization 10](https://github.com/Sumit21adm/Data-Visualization-Assesment/blob/28c12408ca6734e85559addb1071a06cb89f7bd6/Visualisation%20Outputs/visual10.png)
+
+    Conclusion: 
+    *
+
+### 12 All Time Maiden Overs By Individual Players
+    fig, ax = plt.subplots(figsize=(16, 9))
+    data = cleaned_ball.groupby(['fullName'])['maidens'].sum().sort_values(ascending=False)[:5]
+    x = data
+    y = data.index
+    plt.title("All Time Maiden Overs By Individual Players 2008-21")
+    plt.bar(y, x, color=cmix)
+    plt.xlabel('Bowler Name')
+    plt.ylabel('Total Maidens')
+    for bars in ax.containers:
+    ax.bar_label(bars)
+    plt.show()
+![Visualization 11](https://github.com/Sumit21adm/Data-Visualization-Assesment/blob/28c12408ca6734e85559addb1071a06cb89f7bd6/Visualisation%20Outputs/visual11.png)
+
+    Conclusion: 
+    *
+
+### 13 All Time No Balls By Individual Players
+    fig, ax = plt.subplots(figsize=(16, 9))
+    data = cleaned_ball.groupby(['fullName'])['noballs'].sum().sort_values(ascending=False)[:5]
+    x = data
+    y = data.index
+    plt.title("All Time No Balls By Individual Players")
+    plt.bar(y, x, color=c10)
+    plt.xlabel('Bowler Name')
+    plt.ylabel('Total No Of NO-Balls')
+    for bars in ax.containers:
+    ax.bar_label(bars)
+    plt.show()
+![Visualization 12](https://github.com/Sumit21adm/Data-Visualization-Assesment/blob/28c12408ca6734e85559addb1071a06cb89f7bd6/Visualisation%20Outputs/visual12.png)
+
+    Conclusion: 
+    *
