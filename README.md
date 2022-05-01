@@ -108,19 +108,9 @@
 
     Conclusion:
 
-    2008 - 58   |   2009 - 57
-    2010 - 60
-    2011 - 73
-    2012 - 74
-    2013 - 76
-    2014 - 60
-    2015 - 59
-    2016 - 60
-    2017 - 59
-    2018 - 60
-    2019 - 60
-    2020 - 60
-    2021 - 60
+    2008 - 58   |   2009 - 57   |   2010 - 60   |   2011 - 73   |   2012 - 74
+    2013 - 76   |   2014 - 60   |   2015 - 59   |   2016 - 60   |   2017 - 59
+    2018 - 60   |2019 - 60  |   2020 - 60   |   2021 - 60
 
 #### 3. Total No Of Matches Played In Particular Stadiums 2008-21
     data = cleaned_bat.groupby(['match_id', 'venue']).count().index.droplevel(level=0).value_counts().sort_values()
