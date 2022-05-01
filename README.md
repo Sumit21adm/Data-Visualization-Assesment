@@ -123,12 +123,35 @@
     plt.show()
 ![Visualization 2](https://github.com/Sumit21adm/Data-Visualization-Assesment/blob/28c12408ca6734e85559addb1071a06cb89f7bd6/Visualisation%20Outputs/visual2.png)
 
-#### 4
-    -
+#### 4 Top 10 Man Of The Match Winners Of All Time IPL
+    # Top 10 Man Of The Match Winners Of All Time IPL
+    t5motm = all_matches['pom'].value_counts()[:10].sort_values(ascending=False)
+    x = t5motm
+    y = t5motm.index
+    # Figure Size
+    fig, ax = plt.subplots(figsize=(16, 9))
+    plt.bar(y, x, color=c10)
+    plt.title("All Time Top 10 Man Of The Match Winners Of IPL 2008-21")
+    plt.ylabel('No Of Times Man Of The Match Counts')
+    plt.xlabel('Player Names')
+    for bars in ax.containers:
+    ax.bar_label(bars)
+    plt.show()
 ![Visualization 3](https://github.com/Sumit21adm/Data-Visualization-Assesment/blob/28c12408ca6734e85559addb1071a06cb89f7bd6/Visualisation%20Outputs/visual3.png)
 
-#### 5
-    -
+#### 5 No Of Total Matches Won By Particular IPL TEAMS 2008-21
+    all_matches['Year'] = all_matches['season']
+    all_matches['winner'].value_counts()[:5].sort_values()
+    
+    plt.figure(figsize=(16, 9))
+    ax = sns.countplot(x='winner', data=all_matches, order=all_matches['winner'].value_counts()[:8].index)
+    
+    plt.title("No Of Total Matches Won By Particular IPL TEAMS 2008-21")
+    plt.ylabel('Match Win Count')
+    plt.xlabel('Team Names')
+    for bars in ax.containers:
+    ax.bar_label(bars)
+    plt.show()
 ![Visualization 4](https://github.com/Sumit21adm/Data-Visualization-Assesment/blob/28c12408ca6734e85559addb1071a06cb89f7bd6/Visualisation%20Outputs/visual4.png)
 
 #### 6
