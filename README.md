@@ -89,7 +89,7 @@
     str1 = "Total Matches Played From IPL 2008 to 2021 are: "
     str2 = all_matches.shape[0]
     print(str1 + str(str2))
-![Visualization 1](https://github.com/Sumit21adm/Data-Visualization-Assesment/blob/28c12408ca6734e85559addb1071a06cb89f7bd6/Visualisation%20Outputs/visual0.png)
+![Visualization 0](https://github.com/Sumit21adm/Data-Visualization-Assesment/blob/1dc76dc5caff133e08630aa42da642874a20adb5/Visualisation%20Outputs/visual0.png)
 
     Conclusion: 
     Total Matches Played From IPL 2008 to 2021 are: 884
