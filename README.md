@@ -107,7 +107,20 @@
 ![Visualization 1](https://github.com/Sumit21adm/Data-Visualization-Assesment/blob/28c12408ca6734e85559addb1071a06cb89f7bd6/Visualisation%20Outputs/visual1.png)
 
 #### 3
-    -
+    # Visualizing No Of Matches Played In Particular Stadiums
+
+    data = cleaned_bat.groupby(['match_id', 'venue']).count().index.droplevel(level=0).value_counts().sort_values()
+    x = data
+    y = data.index
+    # Figure Size
+    fig, ax = plt.subplots(figsize=(12, 20))
+    plt.barh(y, x, color=cmix)
+    plt.title("No Of Matches Played In Particular Stadiums 2008-21")
+    plt.ylabel('Venue/ Stadium Names')
+    plt.xlabel('Total Matches Played')
+    for bars in ax.containers:
+    ax.bar_label(bars)
+    plt.show()
 ![Visualization 2](https://github.com/Sumit21adm/Data-Visualization-Assesment/blob/28c12408ca6734e85559addb1071a06cb89f7bd6/Visualisation%20Outputs/visual2.png)
 
 #### 4
