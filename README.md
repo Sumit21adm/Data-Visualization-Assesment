@@ -88,9 +88,7 @@
 #### 1. Total Matches Palayes In IPL From 2008-2021
     str1 = "Total Matches Played From IPL 2008 to 2021 are: "
     str2 = all_matches.shape[0]
-    print(str1 + str(str2))
-![Visualization 1](https://github.com/Sumit21adm/Data-Visualization-Assesment/blob/28c12408ca6734e85559addb1071a06cb89f7bd6/Visualisation%20Outputs/visual1.png)
-    
+    print(str1 + str(str2))   
 #### 2 .Season-Wise No Of Matches Played 2008-21
     # Visualizing Season Wise Matches Played
     
@@ -106,9 +104,12 @@
     for bars in ax.containers:
     ax.bar_label(bars)
     plt.show()
-![Visualization 2]()
+![Visualization 1](https://github.com/Sumit21adm/Data-Visualization-Assesment/blob/28c12408ca6734e85559addb1071a06cb89f7bd6/Visualisation%20Outputs/visual1.png)
+
 #### 3
-    - 
+    -
+![Visualization 2](https://github.com/Sumit21adm/Data-Visualization-Assesment/blob/28c12408ca6734e85559addb1071a06cb89f7bd6/Visualisation%20Outputs/visual2.png)
+
 #### 4
     -
 #### 5
