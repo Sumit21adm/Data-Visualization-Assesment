@@ -106,9 +106,23 @@
     plt.show()
 ![Visualization 1](https://github.com/Sumit21adm/Data-Visualization-Assesment/blob/28c12408ca6734e85559addb1071a06cb89f7bd6/Visualisation%20Outputs/visual1.png)
 
-#### 3. 
-    # Visualizing No Of Matches Played In Particular Stadiums
+    Conclusion:
+    2008 - 58
+    2009 - 57
+    2010 - 60
+    2011 - 73
+    2012 - 74
+    2013 - 76
+    2014 - 60
+    2015 - 59
+    2016 - 60
+    2017 - 59
+    2018 - 60
+    2019 - 60
+    2020 - 60
+    2021 - 60
 
+#### 3. Total No Of Matches Played In Particular Stadiums 2008-21
     data = cleaned_bat.groupby(['match_id', 'venue']).count().index.droplevel(level=0).value_counts().sort_values()
     x = data
     y = data.index
@@ -154,8 +168,18 @@
     plt.show()
 ![Visualization 4](https://github.com/Sumit21adm/Data-Visualization-Assesment/blob/28c12408ca6734e85559addb1071a06cb89f7bd6/Visualisation%20Outputs/visual4.png)
 
-#### 6
-    -
+#### 6. Total IPL Runs Scored By Individual Players 2008-21
+    fig, ax = plt.subplots(figsize=(16, 9))
+    data = cleaned_bat.groupby(['fullName'])['runs'].sum().sort_values(ascending=False)[:10]
+    x = data
+    y = data.index
+    plt.title("Total IPL Runs Scored By Individual Players 2008-21")
+    plt.bar(y, x, color='#00F3D0')
+    plt.xlabel('Batsman Names')
+    plt.ylabel('Runs Scored')
+    for bars in ax.containers:
+    ax.bar_label(bars)
+    plt.show()
 ![Visualization 5](https://github.com/Sumit21adm/Data-Visualization-Assesment/blob/28c12408ca6734e85559addb1071a06cb89f7bd6/Visualisation%20Outputs/visual5.png)
 
 #### 7
