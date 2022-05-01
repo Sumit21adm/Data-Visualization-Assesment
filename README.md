@@ -84,7 +84,7 @@
 
 
 
-### List Of Visualizations Performed
+### <u>List Of Visualizations Performed</u>
 #### 1. Total Matches Palayes In IPL From 2008-2021
     str1 = "Total Matches Played From IPL 2008 to 2021 are: "
     str2 = all_matches.shape[0]
