@@ -10,12 +10,13 @@ from collections import Counter
 batdataset = pd.read_csv('datasets/all_season_batting_card.csv')
 balldataset = pd.read_csv('datasets/all_season_bowling_card.csv')
 all_matches = pd.read_csv('datasets/all_season_summary.csv')
+ptable = pd.read_csv('datasets/points_table.csv')
 
 # %%
 ### View Batting Dataset (First 10)
 print(batdataset.head(10))
 
-#%%
+# %%
 ### View Balling Dataset (First 10)
 print(balldataset.head(10))
 
@@ -62,12 +63,15 @@ cleaned_ball.to_csv('cleaned_ball.csv')
 null2 = cleaned_ball.isna().sum()
 print(null2)
 
-#%%
+# %%
 # Setting Colors
-cmix = ["#00FFFF", "#F0FFFF", "#89CFF0", "#0000FF", "#7393B3", "#088F8F", "#0096FF", "#5F9EA0","#0047AB", "#6495ED",	"#00FFFF",	"#00008B",	"#6F8FAF",	"#1434A4",	"#7DF9FF",	"#6082B6",	"#00A36C", "#3F00FF",	"#5D3FD3",	"#ADD8E6",	"#191970",	"#000080",	"#1F51FF",	"#A7C7E7",	"#CCCCFF",	"#B6D0E2",	"#96DED1",	"#4169E1",	"#0F52BA",	"#9FE2BF",	"#87CEEB",	"#4682B4",	"#008080", "#40E0D0", "#0437F2",	"#40B5AD",	"#0818A8"]
+cmix = ["#00FFFF", "#F0FFFF", "#89CFF0", "#0000FF", "#7393B3", "#088F8F", "#0096FF", "#5F9EA0", "#0047AB", "#6495ED",
+        "#00FFFF", "#00008B", "#6F8FAF", "#1434A4", "#7DF9FF", "#6082B6", "#00A36C", "#3F00FF", "#5D3FD3", "#ADD8E6",
+        "#191970", "#000080", "#1F51FF", "#A7C7E7", "#CCCCFF", "#B6D0E2", "#96DED1", "#4169E1", "#0F52BA", "#9FE2BF",
+        "#87CEEB", "#4682B4", "#008080", "#40E0D0", "#0437F2", "#40B5AD", "#0818A8"]
 
 c10 = ['#1f77b4', '#ff7f0e', '#2ca02c', '#d62728', '#9467bd',
-          '#8c564b', '#e377c2', '#00F3D0', '#bcbd22', '#17becf']
+       '#8c564b', '#e377c2', '#00F3D0', '#bcbd22', '#17becf']
 
 c5 = ['#1f77b4', '#ff7f0e', '#00F3D0', '#bcbd22', '#17becf']
 
@@ -108,7 +112,6 @@ plt.xlabel('Total Matches Played')
 for bars in ax.containers:
     ax.bar_label(bars)
 plt.show()
-
 
 # %%
 # Top 10 Man Of The Match Winners Of All Time IPL
@@ -250,6 +253,8 @@ for bars in ax.containers:
     ax.bar_label(bars)
 plt.show()
 
-#%%
+# %%
+# 14 ******************************************************************************************************************
 
-#%%
+
+# %%
