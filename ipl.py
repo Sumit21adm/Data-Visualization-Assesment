@@ -12,12 +12,12 @@ balldataset = pd.read_csv('datasets/all_season_bowling_card.csv')
 all_matches = pd.read_csv('datasets/all_season_summary.csv')
 
 # %%
-# Printing Batting Dataset
-print(batdataset.head())
+### View Batting Dataset (First 10)
+print(batdataset.head(10))
 
-# %%
-# Printing Balling Dataset
-print(balldataset.head())
+#%%
+### View Balling Dataset (First 10)
+print(balldataset.head(10))
 
 # %%
 # Selecting Required Columns To Create New Cleaned Dataset
