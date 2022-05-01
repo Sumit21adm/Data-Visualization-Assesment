@@ -89,7 +89,7 @@
     str1 = "Total Matches Played From IPL 2008 to 2021 are: "
     str2 = all_matches.shape[0]
     print(str1 + str(str2))   
-#### 2 .Season-Wise No Of Matches Played 2008-21
+#### 2. Season-Wise No Of Matches Played 2008-21
     # Visualizing Season Wise Matches Played
     
     data = cleaned_bat.groupby(['match_id', 'season']).count().index.droplevel(level=0).value_counts().sort_index()
@@ -106,7 +106,7 @@
     plt.show()
 ![Visualization 1](https://github.com/Sumit21adm/Data-Visualization-Assesment/blob/28c12408ca6734e85559addb1071a06cb89f7bd6/Visualisation%20Outputs/visual1.png)
 
-#### 3
+#### 3. 
     # Visualizing No Of Matches Played In Particular Stadiums
 
     data = cleaned_bat.groupby(['match_id', 'venue']).count().index.droplevel(level=0).value_counts().sort_values()
@@ -123,7 +123,7 @@
     plt.show()
 ![Visualization 2](https://github.com/Sumit21adm/Data-Visualization-Assesment/blob/28c12408ca6734e85559addb1071a06cb89f7bd6/Visualisation%20Outputs/visual2.png)
 
-#### 4 Top 10 Man Of The Match Winners Of All Time IPL
+#### 4. Top 10 Man Of The Match Winners Of All Time IPL
     # Top 10 Man Of The Match Winners Of All Time IPL
     t5motm = all_matches['pom'].value_counts()[:10].sort_values(ascending=False)
     x = t5motm
@@ -139,7 +139,7 @@
     plt.show()
 ![Visualization 3](https://github.com/Sumit21adm/Data-Visualization-Assesment/blob/28c12408ca6734e85559addb1071a06cb89f7bd6/Visualisation%20Outputs/visual3.png)
 
-#### 5 No Of Total Matches Won By Particular IPL TEAMS 2008-21
+#### 5. No Of Total Matches Won By Particular IPL TEAMS 2008-21
     all_matches['Year'] = all_matches['season']
     all_matches['winner'].value_counts()[:5].sort_values()
     
