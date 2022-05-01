@@ -184,7 +184,7 @@
     Conclusion: 
     *
 
-#### 7 No Of Fours Hitted By Individual Players 2008-21
+#### 7. No Of Fours Hitted By Individual Players 2008-21
     fig, ax = plt.subplots(figsize=(16, 9))
     data = cleaned_bat.groupby(['fullName'])['fours'].sum().sort_values(ascending=False)[:10]
     x = data
@@ -200,7 +200,7 @@
     Conclusion: 
     *
 
-#### 8 No Of Sixes Hitted By Individual Players 2008-21
+#### 8. No Of Sixes Hitted By Individual Players 2008-21
     fig, ax = plt.subplots(figsize=(16, 9))
     data1 = cleaned_bat.groupby(['fullName'])['sixes'].sum().sort_values(ascending=False)[:10]
     x = data1
@@ -217,7 +217,7 @@
     Conclusion: 
     *
 
-#### 9 Season-Wise Orange Cap Holder Scores
+#### 9. Season-Wise Orange Cap Holder Scores
     fig, ax = plt.subplots(figsize=(16, 9))
     data2 = cleaned_bat.groupby(['season', 'fullName'])['runs'].sum().groupby('season').max()
     x = data2
@@ -234,7 +234,7 @@
     Conclusion: 
     *
 
-#### 10 Season-Wise Purple Cap Holder Wickets
+#### 10. Season-Wise Purple Cap Holder Wickets
     fig, ax = plt.subplots(figsize=(16, 9))
     data2 = cleaned_ball.groupby(['season', 'fullName'])['wickets'].sum().groupby('season').max()
     x = data2
@@ -251,7 +251,7 @@
     Conclusion: 
     *
 
-### 11 All Time Wickets Taken By Individual Players
+### 11. All Time Wickets Taken By Individual Players
     fig, ax = plt.subplots(figsize=(16, 9))
     data = cleaned_ball.groupby(['fullName'])['wickets'].sum().sort_values(ascending=False)[:5]
     x = data
@@ -268,7 +268,7 @@
     Conclusion: 
     *
 
-### 12 All Time Maiden Overs By Individual Players
+### 12. All Time Maiden Overs By Individual Players
     fig, ax = plt.subplots(figsize=(16, 9))
     data = cleaned_ball.groupby(['fullName'])['maidens'].sum().sort_values(ascending=False)[:5]
     x = data
@@ -285,7 +285,7 @@
     Conclusion: 
     *
 
-### 13 All Time No Balls By Individual Players
+### 13. All Time No Balls By Individual Players
     fig, ax = plt.subplots(figsize=(16, 9))
     data = cleaned_ball.groupby(['fullName'])['noballs'].sum().sort_values(ascending=False)[:5]
     x = data
