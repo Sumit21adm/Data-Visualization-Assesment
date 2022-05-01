@@ -106,9 +106,9 @@
     plt.show()
 ![Visualization 1](https://github.com/Sumit21adm/Data-Visualization-Assesment/blob/28c12408ca6734e85559addb1071a06cb89f7bd6/Visualisation%20Outputs/visual1.png)
 
-<u> Conclusion:</u>
-    2008 - 58
-    2009 - 57
+    Conclusion:
+
+    2008 - 58   |   2009 - 57
     2010 - 60
     2011 - 73
     2012 - 74
