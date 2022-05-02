@@ -1,20 +1,56 @@
-#  Data Visualization Project
-## **Description**
-	
+#  DATA PRE-PROCESSING & VISUALIZATION ASSESMENT
+## Introduction
+	Data pre-processing is the process of transforming raw data into an understandable format.
+    It is also an important step in data mining as we cannot work with raw data. The quality
+    of the data should be checked before applying machine learning or data mining algorithms.
 
-## **Requirements**
-	1. VS CODE/ PyCharm/ DataSpell/ Jupyter or any other Python Supported IDE.
-	2. Python Version 3+ Installed (Install Python Packages - NUMPY, PANDAS, MATPLOTLIB)
-	3. LINUX/ WINDOWS/ MAC OS SYSTEM
-	4. Github Knowledge
+### Why is Data pre-processing important?
+- Pre-processing of data is mainly to check the data quality. The quality can be checked by checking Accuracy, Completeness, Consistency, Timeliness, Believability, Interpretability.
 
-## **INDEX**
-### Data Preprocessing (Dataset Link: <a href="https://www.kaggle.com/datasets/rajsengo/indian-premier-league-ipl-all-seasons">Click Here</a>)
-    1. Data Loading
-    2. Data Cleaning
-    3. 
-    4. 
-    5. 
+### Data Pre-processing (Dataset Link: Click Here)
+    1. Data Cleaning
+        a.	Fill/ Remove Missing Data based on effects on Visualization Result.
+        b.	Fix Noisy Data (Make Data of equal sizes and columns must have same data types)
+    2. Data integration
+    3. Data reduction
+    4. Data Transformation
+        a.	Normalization of data – means simplifying the dataset like selecting the attributes required for analysis. so, that information can be fetched easily.
+        b.	Hierarchy Generation, Here attributes are converted from lower level to higher level in hierarchy. For Example-The attribute “city” can be converted to “country”.
+
+### About Data
+Data has been scraped and transformed into following files. The data provided in match level summary as well as ball-by-ball details format for all matches from 2008 till the ongoing 2022 season.
+
+I am going to use these datasets mentioned below:-
+*   all_season_summary.csv - Summary of all matches across all seasons 
+*   all_season_details.csv - Ball-by-ball details of all matches across all seasons
+*   all_season_batting_card.csv - Batting performance of players, all matches across all seasons
+*   all_season_bowling_card.csv - Bowling performance of players, all matches across all seasons
+*   points_table.csv - Overall points table of teams across seasons
+
+### DATA VISUALIZATION
+- Data visualization in python is perhaps one of the most utilized features for data science with python in today’s day and age. The libraries in python come with lots of different features that enable users to make highly customized, elegant, and interactive plots. In this article, we will cover the usage of Matplotlib, Seaborn as well as an introduction to other alternative packages that can be used in python visualization. Within Matplotlib and Seaborn, we will be covering a few of the most commonly used plots in the data science world for easy visualization.
+
+### Requirements
+    1. VS CODE/ PyCharm/ Data Spell/ Jupyter or any other Python Supported IDE.
+    2. Python Version 3+ Installed (Install Python Packages - NUMPY, PANDAS, MATPLOTLIB)
+    3. LINUX/ WINDOWS/ MAC OS SYSTEM
+    4. Github Knowledge
+
+### List Of Visualizations:
+    1.	Total Matches Played In IPL From 2008-2021
+    2.	Season-Wise No Of Matches Played 2008-21
+    3.	Total No Of Matches Played In Particular Stadiums 2008-21
+    4.	Top 10 Man Of The Match Winners Of All Time IPL
+    5.	No Of Total Matches Won By Particular IPL TEAMS 2008-21
+    6.	Total IPL Runs Scored By Individual Players 2008-21
+    7.	No Of Fours Hitted By Individual Players 2008-21
+    8.	No Of Sixes Hitted By Individual Players 2008-21
+    9.	All Time Maximum Run Scored By Orange Cap Winners In A Season from 2008-21
+    10.	All Time Maximum Wickets Taken By Purple Cap Winners In A Season from 2008-21
+    11.	All Time Wickets Taken By Individual Players
+    12.	All Time Maiden Overs By Individual Players
+    13.	All Time No Balls By Individual Players
+
 
 #### Import Packages
     import numpy as np
