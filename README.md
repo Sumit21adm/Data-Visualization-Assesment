@@ -168,9 +168,9 @@ I am going to use these datasets mentioned below:-
 ![Visualization 2](https://github.com/Sumit21adm/Data-Visualization-Assesment/blob/28c12408ca6734e85559addb1071a06cb89f7bd6/Visualisation%20Outputs/visual2.png)
 
     Conclusion: 
-    •	Wankhede Stadium, Mumbai has hosted most of the IPL Matches from 2008-21 i.e. 83 Matches.
-    •	M. Chinnaswamy Stadium, Bengaluru has hosted 80 IPL Matches from 2008-21.
-    •	Arun Jaitley Stadium, Delhi has hosted 78 IPL Matches from 2008-21.
+    • Wankhede Stadium, Mumbai has hosted most of the IPL Matches from 2008-21 i.e. 83 Matches.
+    • M. Chinnaswamy Stadium, Bengaluru has hosted 80 IPL Matches from 2008-21.
+    • Arun Jaitley Stadium, Delhi has hosted 78 IPL Matches from 2008-21.
 
 
 #### 4. Top 10 Man Of The Match Winners Of All Time IPL
@@ -191,13 +191,13 @@ I am going to use these datasets mentioned below:-
 
     Conclusion: 
     Top 10 Man Of The Match Winners with No Of Times They Got Awarded.
-    •	25 Times – AB de Villiers
-    •	22 Times – Chris Gayle
-    •	18 Times – Rohit Sharma
-    •	17 Times – MS Dhoni, David Warner
-    •	16 Times – Shane Watson, Yusuf Pathan
-    •	14 Times – Suresh Raina, Kieron Pollard
-    •	13 Times – Gautam Gambhir
+    • 25 Times – AB de Villiers
+    • 22 Times – Chris Gayle
+    • 18 Times – Rohit Sharma
+    • 17 Times – MS Dhoni, David Warner
+    • 16 Times – Shane Watson, Yusuf Pathan
+    • 14 Times – Suresh Raina, Kieron Pollard
+    • 13 Times – Gautam Gambhir
 
 
 #### 5. No Of Total Matches Won By Particular IPL TEAMS 2008-21
