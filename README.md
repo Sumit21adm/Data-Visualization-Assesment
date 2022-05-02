@@ -216,7 +216,16 @@ I am going to use these datasets mentioned below:-
 ![Visualization 4](https://github.com/Sumit21adm/Data-Visualization-Assesment/blob/28c12408ca6734e85559addb1071a06cb89f7bd6/Visualisation%20Outputs/visual4.png)
 
     Conclusion: 
-    *
+    Total No Of Matches Won By Particular IPL Teams 2008-21(Top to Bottom) List:
+    • 127 - MI
+    • 119 - CSK
+    • 111 - KKR
+    • 101 - SRH
+    • 100 - RCB
+    • 95   - DC
+    • 89   - RR
+    • 88   - KXIP
+
 
 #### 6. Total IPL Runs Scored By Individual Players 2008-21
     fig, ax = plt.subplots(figsize=(16, 9))
@@ -233,7 +242,18 @@ I am going to use these datasets mentioned below:-
 ![Visualization 5](https://github.com/Sumit21adm/Data-Visualization-Assesment/blob/28c12408ca6734e85559addb1071a06cb89f7bd6/Visualisation%20Outputs/visual5.png)
 
     Conclusion: 
-    *
+    Total IPL Runs Scored By Individual Players 2008-21
+    • Virat Kohli – 6283
+    • Shikhar Dhawan – 5784
+    • Rohit Sharma – 5611
+    • Suresh Raina – 5528
+    • David Warner – 5449
+    • AB de Villiers – 5162
+    • Chris Gayle – 4965
+    • MS Dhoni – 4746
+    • Robin Uthappa – 4722
+    • Gautam Gambhir – 4217
+
 
 #### 7. No Of Fours Hitted By Individual Players 2008-21
     fig, ax = plt.subplots(figsize=(16, 9))
@@ -249,7 +269,18 @@ I am going to use these datasets mentioned below:-
 ![Visualization 6](https://github.com/Sumit21adm/Data-Visualization-Assesment/blob/28c12408ca6734e85559addb1071a06cb89f7bd6/Visualisation%20Outputs/visual6.png)
 
     Conclusion: 
-    *
+    Most No Fours Hitted By Individual Players in IPL 2008-21.
+    • Shikhar Dhawan – 654
+    • Virat Kohli – 546
+    • David Warner – 525
+    • Suresh Raina – 506
+    • Gautam Gambhir – 492
+    • Rohit Sharma – 491
+    • Robin Uthappa – 462
+    • Ajinkya Rahane – 417
+    • AB de Villiers – 413
+    • Chris Gayle – 404
+
 
 #### 8. No Of Sixes Hitted By Individual Players 2008-21
     fig, ax = plt.subplots(figsize=(16, 9))
@@ -266,7 +297,18 @@ I am going to use these datasets mentioned below:-
 ![Visualization 7](https://github.com/Sumit21adm/Data-Visualization-Assesment/blob/28c12408ca6734e85559addb1071a06cb89f7bd6/Visualisation%20Outputs/visual7.png)
 
     Conclusion: 
-    *
+    Most No Sixes Hitted By Individual Players in IPL 2008-21.
+    • Chris Gayle – 357
+    • AB de Villiers – 251
+    • Rohit Sharma – 227
+    • MS Dhoni – 219
+    • Kieron Pollard – 214
+    • Virat Kohli – 210
+    • Suresh Raina – 203
+    • David Warner – 201
+    • Shane Watson – 190
+    • Robin Uthappa – 168
+
 
 #### 9. Season-Wise Orange Cap Holder Scores
     fig, ax = plt.subplots(figsize=(16, 9))
@@ -283,7 +325,9 @@ I am going to use these datasets mentioned below:-
 ![Visualization 8](https://github.com/Sumit21adm/Data-Visualization-Assesment/blob/28c12408ca6734e85559addb1071a06cb89f7bd6/Visualisation%20Outputs/visual8.png)
 
     Conclusion: 
-    *
+    All Time Maximum Run Scored By Orange Cap Winners In A Season from 2008-21
+    • In Season 2016 The Orange Cap Winner Scored Max Runs i.e. Total of 973.
+
 
 #### 10. Season-Wise Purple Cap Holder Wickets
     fig, ax = plt.subplots(figsize=(16, 9))
@@ -300,7 +344,10 @@ I am going to use these datasets mentioned below:-
 ![Visualization 9](https://github.com/Sumit21adm/Data-Visualization-Assesment/blob/28c12408ca6734e85559addb1071a06cb89f7bd6/Visualisation%20Outputs/visual9.png)
 
     Conclusion: 
-    *
+    All Time Maximum Wickets Taken By Purple Cap Winners In A Season from 2008-21
+    • In Season 2013 The Purple Cap Winner Taken Max Wickets i.e. 32.
+    • In Season 2021 also The Purple Cap Winner Taken Max Wickets i.e. 32.
+
 
 ### 11. All Time Wickets Taken By Individual Players
     fig, ax = plt.subplots(figsize=(16, 9))
@@ -317,7 +364,12 @@ I am going to use these datasets mentioned below:-
 ![Visualization 10](https://github.com/Sumit21adm/Data-Visualization-Assesment/blob/28c12408ca6734e85559addb1071a06cb89f7bd6/Visualisation%20Outputs/visual10.png)
 
     Conclusion: 
-    *
+    All Time Wickets Taken By Individual Players 2008-21
+    1 – Lasith Malinga [ 170 Wickets ]
+    2 – Dwayne Bravo [ 167 Wickets ]
+    3 – Amit Mishra [ 166 Wickets ]
+    4 – Piyush Chawla [ 157 Wickets ]
+    5 – Harbhajan Singh [ 150 Wickets ]
 
 ### 12. All Time Maiden Overs By Individual Players
     fig, ax = plt.subplots(figsize=(16, 9))
@@ -334,7 +386,13 @@ I am going to use these datasets mentioned below:-
 ![Visualization 11](https://github.com/Sumit21adm/Data-Visualization-Assesment/blob/28c12408ca6734e85559addb1071a06cb89f7bd6/Visualisation%20Outputs/visual11.png)
 
     Conclusion: 
-    *
+    All Time Maiden Overs By Individual Players
+    1 - Praveen Kumar [ 14 Maidens ]
+    2 - Irfan Pathan [ 10 Maidens ]
+    3 - Bhuvneshwar Kumar [ 09 Maidens ]
+    4 - Sandeep Sharma [ 08 Maidens ]
+    5 - Lasith Malinga [ 08 Maidens ]
+
 
 ### 13. All Time No Balls By Individual Players
     fig, ax = plt.subplots(figsize=(16, 9))
@@ -351,4 +409,10 @@ I am going to use these datasets mentioned below:-
 ![Visualization 12](https://github.com/Sumit21adm/Data-Visualization-Assesment/blob/28c12408ca6734e85559addb1071a06cb89f7bd6/Visualisation%20Outputs/visual12.png)
 
     Conclusion: 
-    *
+    All Time No Balls By Individual Players
+    1 – Jasprit Bumrah [ 27 NoBalls ]
+    2 – Sreesanth [ 23 NoBalls ]
+    3 – Ishant Sharma [ 21 NoBalls ]
+    4 – Amit Mishra [ 21 NoBalls ]
+    5 – Umesh Yadav [ 19 NoBalls ]
+
